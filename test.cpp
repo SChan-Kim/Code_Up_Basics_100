@@ -5,7 +5,8 @@ using namespace std;
 
 int main() {
 
-    unsigned int number;
+    double number;
     cin >> number;
-    cout << number << endl;
+    cout << fixed << setprecision(11) << number << endl;
+    return 0;
 }
