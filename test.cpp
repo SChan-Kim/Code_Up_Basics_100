@@ -4,11 +4,11 @@ using namespace std;
 
 int main() {
 
-    int a,b;
+    int a,b,c;
     cin >> a;
     cin >> b;
-
-    cout << (a!=b) << endl;
+    c = a^b;
+    cout << c << endl;
 
     return 0;
 }
