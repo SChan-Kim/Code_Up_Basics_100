@@ -4,32 +4,14 @@ using namespace std;
 
 int main() {
 
-    char grade;
-    cin >> grade;
-
-    switch (grade) {
-        case 'A':
-            cout << "best!!!" << endl;
+    char ch;
+    while(1) {
+        cin >> ch;
+        cout << ch << endl;
+        if(ch == 'q')
             break;
-
-        case 'B':
-            cout << "good!!" << endl;
-            break;
-
-        case 'C':
-            cout << "run!" << endl;
-            break;
-
-        case 'D':
-            cout << "slowly~" << endl;
-            break;
-
-
-        default:
-            cout << "what?" << endl;
     }
 
-
-
     return 0;
+
 }
