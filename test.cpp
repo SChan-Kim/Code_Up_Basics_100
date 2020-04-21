@@ -4,12 +4,14 @@ using namespace std;
 
 int main() {
 
-    char ch;
-    while(1) {
-        cin >> ch;
-        cout << ch << endl;
-        if(ch == 'q')
-            break;
+    int a,b;
+    cin >> a;
+    cin >> b;
+
+    for(int i=0; i<a; i++) {
+        for(int j=0; j<b; j++) {
+            cout << i+1 << " " << j+1 << endl;
+        }
     }
 
     return 0;
