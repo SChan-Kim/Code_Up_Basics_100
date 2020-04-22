@@ -4,16 +4,12 @@ using namespace std;
 
 int main() {
 
-    int a,b;
+    int a,d,n;
     cin >> a;
-    cin >> b;
+    cin >> d;
+    cin >> n;
 
-    for(int i=0; i<a; i++) {
-        for(int j=0; j<b; j++) {
-            cout << i+1 << " " << j+1 << endl;
-        }
-    }
+    cout << a+(d*(n-1)) << endl;
 
     return 0;
-
 }
