@@ -5,17 +5,40 @@ using namespace std;
 
 int main() {
 
-    int a,b,c, day;
+    int input, a, b;
+    int map[20][20];
 
-    cin >> a;
-    cin >> b;
-    cin >> c;
-    day = 1;
+    for(int i=1; i<20; i++) {
+            for(int j=1; j<20; j++)
+                cin >> map[i][j];
+    }
 
-    while((day%a!=0)||(day%b!=0)||(day%c!=0)) // day를 a,b,c로 나누었을 때 모두 0이 되면 loop가 돌아가지 않는다.
-        day++;
+    cin >> input;
 
-    cout << day << endl;
+    for(int i=1; i<input; i++) {
+        cin >> a >> b;
+        for(int j=1; j<a; j++) {
+            if(map[a][j] == 0)
+                map[a][j] = 1;
+            else
+                map[a][j] = 0;
+
+            }
+
+        for(int k=1; k<b; k++) {
+            if(map[k][b] == 0)
+                map[k][b] = 1;
+            else
+                map[k][b] = 0;
+        }
+    }
+
+    for(int i=1; i<20; i++) {
+        for(int j=1; j<20; j++)
+            cout << map[i][j] << " ";
+        cout << endl;
+    }
+
 
     return 0;
 }
