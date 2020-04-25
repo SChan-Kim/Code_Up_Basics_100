@@ -15,9 +15,9 @@ int main() {
 
     cin >> input;
 
-    for(int i=1; i<input; i++) {
+    for(int i=1; i<=input; i++) {
         cin >> a >> b;
-        for(int j=1; j<a; j++) {
+        for(int j=1; j<20; j++) {
             if(map[a][j] == 0)
                 map[a][j] = 1;
             else
@@ -25,7 +25,7 @@ int main() {
 
             }
 
-        for(int k=1; k<b; k++) {
+        for(int k=1; k<20; k++) {
             if(map[k][b] == 0)
                 map[k][b] = 1;
             else
